@@ -1,31 +1,232 @@
- /*основний колір тексту #212121;  */
-/* другорядний колір тексту #757575 */
+ /*основний колір тексту #757575;  */
 /* колір акценту #2196F3 */
-/* колір фону шапки та тексту #FFFFFF */
 
-body{
-    color: #757575;
-    background-color: #FFFFFF;;
+:root {
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-bck-color: #F5F5F5;
 }
 
+body{
+    color: var(--primary-text-color);
+    background-color: var(--primary-bck-color);
+    font-family: 'Roboto',-apple-system,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        Cantarell,
+        Ubuntu,
+        roboto,
+        noto,
+        arial, sans-serif;
+}
+header { 
+    background-color: #FFFFFF;
+}
 
 ul{
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
+
+
+/* logo */
+.logo {
+    font-family: 'Raleway', -apple-system,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        Cantarell,
+        Ubuntu,
+        roboto,
+        noto,
+        arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo .first-part {
+    color: var(--accent-color);
+}
+.logo .second-part {
+    color: #000000;
+}
+.logo .second-variant {
+    color: rgba(255, 255, 255, 1);
+}
+
 
 /* Site-nav */
 .site-nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: #212121;
 }
-.site-nav .link:hover {
-    color: #2196F3;
+.site-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent-color);
 }
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
 
 /* Auth-nav */
 .auth-nav .link {
-    color: #757575;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
 }
 
-.auth-nav .link:hover {
-    color: #2196F3;
+.auth-nav .link:hover, 
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+.hero {
+    background-color: #2F303A;
+}
+.hero .hero-tittle{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* Section */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121
+}
+
+/* FEATURES */
+.features-list .subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.features-list .text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+
+
+/* OUR TEAM */
+
+.employees {
+    background-color: #F5F4FA;
+}
+.team-list .card {
+    background: #FFFFFF;
+}
+.team-list .card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.team-list .text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    background-color: var();
+}
+.list-button .filter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+
+.list-button .filter:hover,
+.list-button .filter:focus
+ {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+
+}
+
+.item .item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+
+}
+.item .text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #2F303A;
+}
+
+.adress-list .link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.adress-list .link:hover,
+.adress-list .link:focus {
+    color: var(--accent-color);
 }

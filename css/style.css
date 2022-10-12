@@ -106,8 +106,9 @@ a {
     background-color: var(--accent-color);
     cursor: pointer;
 }
-.button:hover {
-    background-color: var(--second-bck-color);
+.button:hover,
+.button:focus {
+    background-color: #188CE8;
 }
 
 /* Section */
@@ -164,7 +165,7 @@ a {
 .portfolio {
     background-color: var(--white-color);
 }
-.list-button .filter {
+.list-button .filter .button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -175,8 +176,8 @@ a {
     cursor: pointer;
 }
 
-.filter .filter-button:hover,
-.filter .filter-button:focus
+.filter .button:hover,
+.filter .button:focus
  {
     color: var(--white-color);
     background-color: var(--accent-color);
@@ -206,6 +207,7 @@ footer {
 }
 
 .adress-list .link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -217,6 +219,7 @@ footer {
     color: var(--accent-color);
 }
 .adress-list .link-contact {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
